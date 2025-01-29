@@ -79,7 +79,7 @@ fi
 sleep 5
 # Crear directorios de configuración
 sudo -u $SUDO_USER mkdir -p "$user_home/.config/bspwm" "$user_home/.config/sxhkd" "$user_home/.config/bspwm/scripts" "$user_home/fondos"
-sudo -u $SUDO_USER cp "$user_home/KaliEntorno/fondos/fondo1.jpg" "$user_home/fondos/fondo1.jpg"
+sudo -u $SUDO_USER cp $user_home/KaliEntorno/fondos/* $user_home/fondos/
 
 sleep 5
 # Copiar los archivos de configuración a las carpetas de configuración 
