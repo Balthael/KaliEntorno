@@ -8,6 +8,7 @@ Bienvenidos a la guía de personalización del entorno de S4vitar en Kali Linux.
 ## Video Tutorial
 
 Puedes seguir el video tutorial paso a paso en mi [canal de YouTube](https://youtu.be/YUgXB2IZtcQ). Si el contenido es de tu agrado, considera suscribirte y seguirme en [LinkedIn](https://www.linkedin.com/in/johnosoriob/).
+Recuerda que este script esta diseñado para un sistema operavito Kali Linux en Ingles, si lo quieres en español, cambia en el install.sh Downloads por Descargas. 
 
 ## Instalación
 
