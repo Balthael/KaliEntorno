@@ -315,9 +315,9 @@ echo "Archivo picom.conf copiado exitosamente a .config/picom."
 sleep 5
 
 
-# Instalar Neofetch
-echo "Instalando Neofetch..."
-sudo apt install neofetch -y
+# Instalar Fastfetch
+echo "Instalando fastfetch..."
+sudo apt install fastfetch -y
 if [ $? -ne 0 ]; then
     echo "Error al instalar Neofetch. Abortando."
     exit 1
