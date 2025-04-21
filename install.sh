@@ -84,7 +84,8 @@ sudo -u $SUDO_USER cp $user_home/KaliEntorno/fondos/* $user_home/fondos/
 sleep 5
 # Copiar los archivos de configuración a las carpetas de configuración 
 # Asegúrese de que estos pasos se ejecuten después de que el repositorio KaliEntorno se haya clonado manualmente 
-sudo -u $SUDO_USER cp "$user_home/KaliEntorno/Config/bspwm/bspwmrc" "$user_home/.config/bspwm/" 
+sudo -u $SUDO_USER cp "$user_home/KaliEntorno/Config/bspwm/bspwmrc" "$user_home/.config/bspwm/"
+sudo -u $SUDO_USER cp "$user_home/KaliEntorno/Config/bspwm/setup_monitors.sh" "$user_home/.config/bspwm/" 
 sudo -u $SUDO_USER cp "$user_home/KaliEntorno/Config/sxhkd/sxhkdrc" "$user_home/.config/sxhkd/" 
 
 sleep 5
