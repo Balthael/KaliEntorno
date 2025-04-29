@@ -1,0 +1,212 @@
+*news.txt*    Nvim
+
+
+                            NVIM REFERENCE MANUAL
+
+
+Notable changes since Nvim 0.11                                 *news*
+
+For changes in the previous release, see |news-0.11|.
+
+                                       Type |gO| to see the table of contents.
+
+==============================================================================
+BREAKING CHANGES IN HEAD OR EXPERIMENTAL                    *news-breaking-dev*
+
+              ====== Remove this section before release. ======
+
+The following changes to UNRELEASED features were made during the development
+cycle (Nvim HEAD, the "master" branch).
+
+EXPERIMENTS
+
+• todo
+
+LSP
+
+• todo
+
+OPTIONS
+
+• todo
+
+TREESITTER
+
+• todo
+
+==============================================================================
+BREAKING CHANGES                                                *news-breaking*
+
+These changes may require adaptations in your config or plugins.
+
+API
+
+• todo
+
+BUILD
+
+• todo
+
+DIAGNOSTICS
+
+• |diagnostic-signs| can no longer be configured with |:sign-define| or
+  |sign_define()| (deprecated in Nvim 0.10 |deprecated-0.10|).
+• |vim.diagnostic.disable()| and |vim.diagnostic.is_disabled()| (deprecated in
+  Nvim 0.10 |deprecated-0.10|) are removed.
+• The legacy signature of |vim.diagnostic.enable()| (deprecated in Nvim 0.10
+  |deprecated-0.10|) is no longer supported.
+
+EDITOR
+
+• todo
+
+EVENTS
+
+• todo
+
+HIGHLIGHTS
+
+• todo
+
+LSP
+
+• todo
+
+LUA
+
+• todo
+
+OPTIONS
+
+• 'shelltemp' defaults to "false".
+
+PLUGINS
+
+• todo
+
+TREESITTER
+
+• todo
+
+TUI
+
+• todo
+
+VIMSCRIPT
+
+• todo
+
+==============================================================================
+NEW FEATURES                                                    *news-features*
+
+The following new features were added.
+
+API
+
+• |nvim_win_text_height()| can limit the lines checked when a certain
+  `max_height` is reached, and returns the `end_row` and `end_vcol` for which
+  `max_height` or the calculated height is reached.
+
+DEFAULTS
+
+• 'statusline' default is exposed as a statusline expression (previously it
+  was implemented as an internal C routine).
+
+DIAGNOSTICS
+
+• todo
+
+EDITOR
+
+• |:iput| works like |:put| but adjusts indent.
+• |omnicompletion| in `help` buffer. |ft-help-omni|
+
+EVENTS
+
+• |CmdlineLeavePre| triggered before preparing to leave the command line.
+
+HIGHLIGHTS
+
+• |hl-DiffTextAdd| highlights added text within a changed line.
+
+LSP
+
+• |vim.lsp.ClientConfig| gained `workspace_required`.
+• Support for `textDocument/documentColor`: |lsp-document_color|
+  https://microsoft.github.io/language-server-protocol/specification/#textDocument_documentColor
+• The `textDocument/diagnostic` request now includes the previous id in its
+  parameters.
+
+LUA
+
+• Lua type annotations for `vim.uv`.
+• |vim.hl.range()| now allows multiple timed highlights.
+
+OPTIONS
+
+• 'autowriteall' writes all buffers upon receiving `SIGHUP`, `SIGQUIT` or `SIGTSTP`.
+• 'chistory' and 'lhistory' set size of the |quickfix-stack|.
+• 'completefuzzycollect' enables fuzzy collection of candidates for (some)
+  |ins-completion| modes.
+• 'completeopt' flag "nearset" sorts completion results by distance to cursor.
+• 'diffopt' `inline:` configures diff highlighting for changes within a line.
+• 'pummaxwidth' sets maximum width for the completion popup menu.
+• 'winborder' "bold" style.
+• |g:clipboard| accepts a string name to force any builtin clipboard tool.
+
+PERFORMANCE
+
+• todo
+
+PLUGINS
+
+• Customize :checkhealth by handling a `FileType checkhealth` event.
+  |health-usage|
+
+STARTUP
+
+• todo
+
+TERMINAL
+
+• todo
+
+TREESITTER
+
+• todo
+
+TUI
+
+• todo
+
+UI
+
+• |:checkhealth| shows a summary in the header for every healthcheck.
+• |ui-multigrid| provides composition information and absolute coordinates.
+
+VIMSCRIPT
+
+• |cmdcomplete_info()| gets current cmdline completion info.
+
+==============================================================================
+CHANGED FEATURES                                                 *news-changed*
+
+These existing features changed their behavior.
+
+• 'spellfile' location defaults to `stdpath("data").."/site/spell/"` instead of
+  the first writable directory in 'runtimepath'.
+• |vim.version.range()| doesn't exclude `to` if it is equal to `from`.
+
+==============================================================================
+REMOVED FEATURES                                                 *news-removed*
+
+These deprecated features were removed.
+
+• todo
+
+==============================================================================
+DEPRECATIONS                                                *news-deprecations*
+
+See |deprecated-0.12|.
+
+ vim:tw=78:ts=8:sw=2:et:ft=help:norl:
