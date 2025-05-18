@@ -255,7 +255,7 @@ sleep 5
 
 # Clonar el recurso blue-sky en el directorio Downloads del usuario no privilegiado
 echo "Clonando el repositorio blue-sky en el directorio Downloads..."
-sudo -u $SUDO_USER git -C "$user_home/Downloads" clone https://github.com/VaughnValle/blue-sky
+sudo -u $SUDO_USER git clone https://github.com/VaughnValle/blue-sky "$user_home/Downloads/blue-sky"
 if [ $? -ne 0 ]; then
     echo "Error al clonar el repositorio blue-sky. Abortando."
     exit 1
