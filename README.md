@@ -84,58 +84,70 @@ git clone https://github.com/NvChad/starter ~/.config/nvim
 nvim
 ```
 
-📚 Atajos (Personalización de entorno en Linux)
-🔹 General
-Combinación	Acción
-Windows + Enter	Abrir Terminal
-Windows + Q	Cerrar Terminal
-Windows + D	Abrir Rofi
-Windows + Esc	'Aplicar' la configuración
-Windows + Shift + R	Recargar Entorno
-Windows + Shift + Q	Volver a la pantalla de bloqueo
-Esc + Esc	Sudo
-Ctrl + Alt + Mouse	Seleccionar copiar/pegar en modo Columna
+Atajos (Personalización de entorno en Linux)
 
-🔹 Polybar
-Combinación	Acción
-Windows + 1 - 0	Desplazamiento por ventanas
-Windows + Shift + 1 - 0	Enviar el proceso actual a otra ventana de trabajo
+| Combinación           | Acción                                   |
+| --------------------- | ---------------------------------------- |
+| `Windows + Enter`     | Abrir Terminal                           |
+| `Windows + Q`         | Cerrar Terminal                          |
+| `Windows + D`         | Abrir Rofi                               |
+| `Windows + Esc`       | 'Aplicar' la configuración               |
+| `Windows + Shift + R` | Recargar Entorno                         |
+| `Windows + Shift + Q` | Volver a la pantalla de bloqueo          |
+| `Esc + Esc`           | Sudo                                     |
+| `Ctrl + Alt + Mouse`  | Seleccionar copiar/pegar en modo Columna |
 
-🔹 Preselectores
-Combinación	Acción
-Windows + Ctrl + Alt + Flechas	Abrir Preselector
-Windows + Ctrl + Alt + Espacio	Cerrar Preselector
-Windows + Ctrl + 1 - 0	Cambiar tamaño del Preselector
-Windows + Ctrl + M	Seleccionar proceso y enviarlo a un Preselector nuevo
-Windows + Y	Aplicar proceso previamente seleccionado
+#### 🔹 Polybar
 
-🔹 Terminal
-Combinación	Acción
-Windows + S	Ejecutar Terminal de forma Ventana Flotante (Screen Floating)
-Windows + F	Ejecutar Terminal de forma Pantalla Completa (Full Screen)
-Windows + T	Ejecutar Terminal de forma Encajada (Terminal)
-Windows + Click Izquierdo	Mover la ventana flotante (Mouse)
-Windows + Click Derecho	Ampliar o reducir el tamaño de la ventana (Mouse)
-Windows + Ctrl	Mover ventana flotante (Atajo)
-Windows + Alt	Ampliar o reducir el tamaño de la ventana (Atajo)
-Windows + Shift + Flechas	Intercambiar terminal de Izquierda/Derecha/Arriba/Abajo
+|Combinación|Acción|
+|---|---|
+|`Windows + 1 - 0`|Desplazamiento por ventanas|
+|`Windows + Shift + 1 - 0`|Enviar el proceso actual a otra ventana de trabajo|
 
-🔹 Kitty
-Combinación	Acción
-Ctrl + Shift + Enter	Abrir terminal o múltiples
-Ctrl + Shift + W	Cerrar terminal
-Ctrl + Shift + R	Ampliar o reducir tamaño de la terminal (T=Arriba S=Abajo)
-Ctrl + Shift + T + número	Nueva pestaña/etiqueta
-Ctrl + Shift + Alt + T	Renombrar
-Ctrl + Shift + Alt + , / .	Desplazamiento por pestañas (Signo coma o punto)
+#### 🔹 Preselectores
 
-🔹 FZF
-Combinación	Acción
-Ctrl + R	Buscar por el Historial (utiliza Flechas para desplazarte)
-wh Ctrl + T	Te mueves por lo que hayas escrito anteriormente (escribes wh)
-cd ** Ctrl + T	Buscar directorios (escribes cd**)
-rm Ctrl + T	Seleccionas con TAB archivos a eliminar y con ENTER aceptas (escribes rm)
+|Combinación|Acción|
+|---|---|
+|`Windows + Ctrl + Alt + Flechas`|Abrir Preselector|
+|`Windows + Ctrl + Alt + Espacio`|Cerrar Preselector|
+|`Windows + Ctrl + 1 - 0`|Cambiar tamaño del Preselector|
+|`Windows + Ctrl + M`|Seleccionar proceso y enviarlo a un Preselector nuevo|
+|`Windows + Y`|Aplicar proceso previamente seleccionado|
 
+#### 🔹 Terminal
+
+|Combinación|Acción|
+|---|---|
+|`Windows + S`|Ejecutar Terminal de forma Ventana Flotante (Screen Floating)|
+|`Windows + F`|Ejecutar Terminal de forma Pantalla Completa (Full Screen)|
+|`Windows + T`|Ejecutar Terminal de forma Encajada (Terminal)|
+|`Windows + Click Izquierdo`|Mover la ventana flotante (Mouse)|
+|`Windows + Click Derecho`|Ampliar o reducir el tamaño de la ventana (Mouse)|
+|`Windows + Ctrl`|Mover ventana flotante (Atajo)|
+|`Windows + Alt`|Ampliar o reducir el tamaño de la ventana (Atajo)|
+|`Windows + Shift + Flechas`|Intercambiar terminal de Izquierda/Derecha/Arriba/Abajo|
+
+#### 🔹 Kitty
+
+|Combinación|Acción|
+|---|---|
+|`Ctrl + Shift + Enter`|Abrir terminal o múltiples|
+|`Ctrl + Shift + W`|Cerrar terminal|
+|`Ctrl + Shift + R`|Ampliar o reducir tamaño de la terminal (T=Arriba S=Abajo)|
+|`Ctrl + Shift + T + número`|Nueva pestaña/etiqueta|
+|`Ctrl + Shift + Alt + T`|Renombrar|
+|`Ctrl + Shift + Alt + , / .`|Desplazamiento por pestañas (Signo coma o punto)|
+
+#### 🔹 FZF
+
+|Combinación|Acción|
+|---|---|
+|`Ctrl + R`|Buscar por el Historial (utiliza Flechas para desplazarte)|
+|`wh Ctrl + T`|Te mueves por lo que hayas escrito anteriormente (`escribes wh`)|
+|`cd ** Ctrl + T`|Buscar directorios (`escribes cd**`)|
+|`rm Ctrl + T`|Seleccionas con TAB archivos a eliminar y con ENTER aceptas (`escribes rm`)|
+
+---
 
 ## Contacto
 
