@@ -8,6 +8,39 @@ fi
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+#VPN HTB Academia
+function avpn(){
+    sudo openvpn $HOME/Documents/HTB/vpn/academy-regular.ovpn
+}
+
+
+#Configurar monitoores
+function monitor(){
+    $HOME/.config/bspwm/setup_monitors.sh
+}
+#function onedrivekali(){
+#    gio mount smb://balthael@PCBALTHA/Kali
+                                                  
+#}
+
+function telegram(){
+    $HOME/Downloads/Telegram/Telegram &>/dev/null & disown
+}
+
+
+#function kpmg(){
+#    cd  /run/user/1000/gvfs/smb-share:server=pcbaltha,share=kali,user=balthael
+
+#}
+
+
+function discordd(){
+    /usr/bin/discord &> /dev/null & disown
+}
+function virt(){
+    /usr/bin/virtualbox &> /dev/null & disown
+}
+
 function settarget(){
     ip_address=$1
     machine_name=$2
@@ -108,9 +141,6 @@ done
 # Limpo variables temporales
 unset TOOLS_PATH SYSTEM_PATHS
 
-
-
-#export PATH=$HOME/Desktop/balthael/Tools/bloodyAD:$HOME/Desktop/balthael/Tools/windows/AD:$HOME/go/bin:/root/go/bin:/opt/nvim/nvim-linux64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:$HOME/.fzf/bin:/usr/share/doc/python3-impacket/examples:/opt/kerbrute:$HOME/.local/bin
 
 # hide EOL sign ('%')
 PROMPT_EOL_MARK=""
@@ -372,9 +402,9 @@ source $HOME/powerlevel10k/powerlevel10k.zsh-theme
 # Custom Aliases
 # -----------------------------------------------
 # bat
-alias cat='bat'
-alias catn='bat --style=plain'
-alias catnp='bat --style=plain --paging=never'
+alias cat='batcat'
+alias catn='batcat --style=plain'
+alias catnp='batcat --style=plain --paging=never'
 
 # ls
 alias ll='lsd -lh --group-dirs=first'
@@ -388,3 +418,5 @@ export LS_COLORS="rs=0:di=34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;
 
 
 
+# Created by `pipx` on 2024-12-16 02:54:59
+export PATH="$PATH:/root/.local/bin"
